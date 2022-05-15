@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+
+
+<div class="main">
+
+
+  <div id="ratingState">
+       <div class="imgCont"><img src="images/icon-star.svg"> </div>
+       <div class="header">
+         <h2>How did we do?</h2>
+         <p>Please let us know how we did with your support request. All feedback is appreciated 
+           to help us improve our offering!</p>
+        </div>
+
+        <div class="footer">
+              <form class="small-btn">
+                 <div><input class="btn" type="button" value="1" aria-selected="false"></div>
+                 <div><input class="btn" type="button" value="2" aria-selected="false"></div>
+                 <div><input class="btn" type="button" value="3" aria-selected="false"></div>
+                 <div><input class="btn" type="button" value="4" aria-selected="false"></div>
+                 <div><input class="btn" type="button" value="5" aria-selected="false"></div>
+                 </form>  
+
+               <div class="submitdiv" > <button type="button" class="submit" onclick="submit(value)">Submit</button> </div>
+         </div>
+
+   </div>
+   <div id="ThankYouState" style="display: none;">
+          <div class="imgthankyoudiv"><img src="images/illustration-thank-you.svg"></div>
+          <p class="selection">You selected <span></span> out of 5</p>
+            <div class="headingthankyoudiv"><h2 class="ThankYouHeading">Thank You!</h2> </div>
+           <p class="ThankYoupara">We appreciate you taking the time to give a rating. If you ever need more
+           support, don’t hesitate to get in touch!</p> 
+   </div>
+ 
+ </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
